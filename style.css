@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}       
+
+:root {
+    --primária: #F8EECF;
+    --secundaria: #9AC0A9;
+    --terciaria: #2E3640;
+    --bege: #f8eecf;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--secundaria);
+}
+
+.cabecalho {
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 10px 10px 0 rgba(0,0,0,0.19);
+}
+
+nav {
+    margin-bottom: 2em;
+}
+
+nav > ul > li {
+    display: inline;
+    list-style-type: none;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    position: sticky;
+    top: 0;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: var(--primária);
+    transition-duration: 0.4s;
+}
+
+nav > ul > li > a:hover {
+    color: var(--terciaria);
+}
+
+
+.menu {
+    font-size: 20px;
+}
+
+nav > ul > li > a{
+    float: left;
+    position: relative;
+    margin-right: 50px;
+    font-size: 20px;
+    color: var(--bege);
+    padding-bottom: 5px;
+  }
+
+.inicio {
+    float: left;
+    margin-left: 30px;
+}
+
+  nav > ul > li > a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--terciaria);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+
+  nav > ul > li > a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.direita {
+    display: flex;
+    margin-left: auto;
+    float: right;
+}
+
+.logo {
+    width: 48px;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+body {
+    background-color: var(--terciaria);
+    color: var(--primária);
+}
+
+.conteudo {
+    margin-top: 15em;
+    margin-left: 20em;
+    margin-right: 8em;
+}
+
+.text-main {
+    font-size: 40px;
+}
+
+footer{
+    margin-top: 12em;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+}
+
+.insta{
+    margin-right: 15px;
+}
+.insta, .git {
+    color: var(--primária);
+}
+
